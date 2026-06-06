@@ -39,7 +39,7 @@
     "babel-jest": "^27.4.6",
     "babel-loader": "^8.2.2",
     "beautify": "^0.0.8",
-    "browser-sync": "^2.27.10",
+    "browser-sync": "^3.0.4",
     "cypress": "^9.5.2",
     "cypress-plugin-snapshots": "^1.4.4",
     "eslint": "^8.7.0",
