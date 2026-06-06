@@ -81,6 +81,7 @@
     "minimatch": "3.1.4",
     "qs": "6.15.2",
     "follow-redirects": "1.16.0",
+    "braces": "3.0.3",
     "glob@8.1.0": {
       "minimatch": "5.1.8"
     },
