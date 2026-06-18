@@ -12,13 +12,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "overrides": {
-    "package-json": {
-      "got": ">=11.8.5"
-    }
-  },
   "devDependencies": {
     "browser-sync": "^3.0.4",
-    "json-server": "^0.16.3"
+    "json-server": "^0.17.4"
   }
 }
