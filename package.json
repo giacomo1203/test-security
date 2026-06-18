@@ -1,99 +1,19 @@
 {
-  "name": "halcon-front-dxp-v2",
+  "name": "mock-server",
   "version": "1.0.0",
   "description": "",
-  "main": "gulpfile.js",
+  "main": "index.js",
   "scripts": {
-    "serve": "browser-sync dist --directory",
-    "serve:watch": "browser-sync dist -w --directory --no-ghost-mode --no-notify",
-    "serve:no-ghost": "browser-sync dist --directory --no-ghost-mode --no-notify",
-    "serve:no-ghost:https": "browser-sync dist --directory --no-ghost-mode --https",
-    "serve:mock": "node mock-server/server.js",
-    "build": "gulp build",
-    "js": "gulp js",
-    "build:watch": "gulp buildWatch",
-    "build:discontinued": "gulp buildDiscontinued",
-    "watch": "gulp watch",
-    "lazys": "gulp lazys",
-    "deploy": "rm -rf dist && gulp build -p && gulp lazys -p && cp -r mock-server ./dist",
-    "deployx": "gulp pugSingles -page pages/fast-track/ && gulp sassSingles && gulp jsSingles",
-    "lint": "eslint . --ext .js",
-    "lint:fix": "npm run lint -- --fix",
-    "test": "jest",
-    "test:coverage": "jest --coverage=true",
-    "main:analysis": "webpack --config analize.js",
-    "cy:run": "cypress run --browser chrome",
-    "cy:open": "cypress open"
+    "serve": "browser-sync ../ --directory",
+    "serve:mock": "node server.js",
+    "serve:https": "browser-sync ../ --directory --https",
+    "serve:no-ghost:https": "browser-sync dist --directory --no-ghost-mode --https"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://JohannRobinson@bitbucket.org/ibkteam/halcon-front-dxp-v2.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/ibkteam/halcon-front-dxp-v2#readme",
   "devDependencies": {
-    "@babel/core": "^7.12.16",
-    "@babel/preset-env": "^7.12.16",
-    "@testing-library/jest-dom": "^5.16.1",
-    "babel-jest": "^27.4.6",
-    "babel-loader": "^8.2.2",
-    "beautify": "^0.0.8",
-    "browser-sync": "^3.0.4",
-    "cypress": "^9.5.2",
-    "cypress-plugin-snapshots": "^1.4.4",
-    "eslint": "^8.7.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-cypress": "^2.12.1",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-jest": "^26.0.0",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-changed": "^4.0.3",
-    "gulp-concat": "^2.6.1",
-    "gulp-iconfont": "^11.0.0",
-    "gulp-iconfont-css": "^3.0.0",
-    "gulp-pug": "^4.0.1",
-    "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.1.1",
-    "gulp-sass-unicode": "^1.0.5",
-    "html-prettify": "^1.0.3",
-    "javascript-obfuscator": "^4.1.1",
-    "jest": "^27.4.7",
-    "jest-canvas-mock": "^2.3.1",
     "json-server": "^0.16.3",
-    "node-sass": "^5.0.0",
-    "pug": "^3.0.2",
-    "sass-mq": "^5.0.1",
-    "terser-webpack-plugin": "^4.2.3",
-    "uglifyjs-webpack-plugin": "^2.2.0",
-    "webpack": "^5.21.2",
-    "webpack-bundle-analyzer": "^4.5.0",
-    "webpack-cli": "^4.9.2",
-    "webpack-obfuscator": "^2.6.0",
-    "webpack-stream": "^6.1.2"
-  },
-  "dependencies": {
-    "crypto-js": "^4.2.0",
-    "jstransformer-scss": "^1.0.0"
-  },
-  "overrides": {
-    "minimatch": "3.1.4",
-    "qs": "6.15.2",
-    "follow-redirects": "1.16.0",
-    "braces": "3.0.3",
-    "xmldom": "0.6.0",
-    "form-data": "4.0.5",
-    "tar": "6.2.1",
-    "node-gyp": "7.1.2",
-    "glob@8.1.0": {
-      "minimatch": "5.1.8"
-    },
-    "glob@10.5.0": {
-      "minimatch": "9.0.7"
-    },
-    "editorconfig": {
-      "minimatch": "9.0.7"
-    }
+    "browser-sync": "^2.26.14"
   }
 }
